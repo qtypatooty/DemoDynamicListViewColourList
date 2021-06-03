@@ -67,7 +67,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String colour = etElement.getText().toString();
-                alColours.remove(colour);
+                int pos = Integer.parseInt(etIndexElement.getText().toString());
+                alColours.remove(pos);
                 aaColour.notifyDataSetChanged();
             }
         });
